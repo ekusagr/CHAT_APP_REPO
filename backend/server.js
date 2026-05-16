@@ -4,10 +4,12 @@ const dotenv = require("dotenv");
 const app = express();
 dotenv.config();
 
+
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send("API is running.....");
+  print("kushagra")
 });
 
 app.get("/app/chats/:id", (req, res) => {
